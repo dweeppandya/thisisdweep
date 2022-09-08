@@ -539,11 +539,11 @@
 <h1 id="tensorflow-on-apples-m1-chips">TensorFlow on Apple's M1 Chips</h1>
 <!-- Header Image -->
 <p><a href="https://github.com/apple/tensorflow_macos" target="_blank">
-<img alt="Tensorflow MacOs" src="/assets/data_science/tensorflow/tensorflow_macos2.png" />
+<img alt="Tensorflow MacOs" src="/thisisdweep/assets/data_science/tensorflow/tensorflow_macos2.png" />
 </a></p>
 <p>As I was recently training some Recurrent Neural Networks (RNNs), I noticed that the training times were huge, even on my M1 pro. Having checked Activity Monitor I saw 0 % GPU utilization. This made me look-up on the internet on how I can make use of these silicon GPUs. This page lists down the steps I followed to achieve this and maybe they help you too!</p>
 <p>Before we begin with the steps here is my Macbook config:</p>
-<p><img src="/assets/data_science/tensorflow/mac_config.png" alt="My macbook config" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
+<p><img src="/thisisdweep/assets/data_science/tensorflow/mac_config.png" alt="My macbook config" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"></p>
 <hr />
 <h2 id="os-requirements">OS Requirements 💻</h2>
 <ul>
@@ -637,7 +637,7 @@
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python -m pip install tensorflow-macos
 </code></pre></div>
 <h2 id="3-install-tensorflows-metal-plugin">3. Install TensorFlow's Metal Plugin</h2>
-<p><a href="https://developer.apple.com/metal/" target="_blank"><img src="/assets/data_science/tensorflow/tensorflow_metal_plugin.png" alt="My macbook config" style="display: block; margin-left: auto; margin-right: auto; width: 75%;"></a></p>
+<p><a href="https://developer.apple.com/metal/" target="_blank"><img src="/thisisdweep/assets/data_science/tensorflow/tensorflow_metal_plugin.png" alt="My macbook config" style="display: block; margin-left: auto; margin-right: auto; width: 75%;"></a></p>
 <p>Apple's Metal provides an API to power hardware-accelerated graphics on their platforms. Read more <a href="https://developer.apple.com/metal/" target="_blank">here</a>.</p>
 <p>To enable tensorflow to utilize M1's GPU, we'll install metal:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>python -m pip install tensorflow-metal
@@ -645,7 +645,7 @@
 <hr />
 <p>Voila! You're done! 🤩</p>
 <p>Reload your jupyter kernels and try running your tensorflow code. It should give you a message like this while model building:</p>
-<p><img alt="" src="/assets/data_science/tensorflow/tensorflow_m1_activation.png" /></p>
+<p><img alt="" src="/thisisdweep/assets/data_science/tensorflow/tensorflow_m1_activation.png" /></p>
 
 
 
